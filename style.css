@@ -1,0 +1,330 @@
+/*GENERAL*/
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 15vh;
+    height: 82vh;
+}
+.containerartist {
+    height: 86vh;
+}
+
+a {
+    text-decoration: none;
+    color: #3C465B;
+}
+
+body {
+    background-image: url(./img/bgwhite.png);
+    background-attachment: fixed;
+    font-family: Optima, Helvetica, sans-serif;
+    color: #3C465B;
+    padding: 0;
+    margin: 0;
+}
+
+a:hover {
+    color: #e890bd;
+}
+
+
+/*HEADER*/
+
+.frame {
+    background-image: url(img/bgframe.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 70%;
+    background-size: 100%;
+    background-position: top;
+    min-width: 350px;
+    height: 100%;
+}
+
+
+header {
+    width: 45%;
+    margin: auto;
+    padding-top: 60px;
+}
+
+h1 {
+    font-size: 4.5vw;
+    font-weight: 50;
+    border-bottom: solid 1px;
+
+    /*    text-align: center;*/
+}
+
+
+/*NAVIGATION*/
+
+nav {
+    width: 45%;
+    margin: auto;
+    font-size: 3vw;
+    font-weight: 20;
+}
+
+
+/*FOOTER*/
+
+.footerbottom {
+    margin: 0;
+    padding: 0;
+    font-size: 0.95vw;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 1vh;
+}
+
+.footertop {
+    margin: 0;
+    padding: 0;
+    font-size: 0.95vw;
+    text-align: center;
+}
+
+.index {}
+
+
+
+
+
+
+
+
+/*MENU MENU MENU MENU MENU */
+.menuhtml {
+    padding-top: 1vh;
+    padding-bottom: 10vh
+}
+
+.mainmenu {
+    width: 60%;
+    margin: auto;
+    font-size: 3vw;
+    font-weight: 20;
+}
+
+.exibitions {
+    background-image: url(img/frame%20copy.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    background-size: 100%;
+    background-position: center;
+    width: 50%;
+    min-width: 200px;
+    min-height: 140px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.headermenu {
+    width: 60%;
+}
+
+.web {
+    grid-area: web;
+    padding: 7vh;
+    background-image: url(img/basicwebframe.png);
+}
+
+.con {
+    grid-area: con;
+    padding: 7vh;
+    background-image: url(img/basicconframe.png);
+}
+
+.ani {
+    grid-area: ani;
+    padding: 7vh;
+    background-image: url(img/basicaniframe.png);
+}
+
+.ux {
+    grid-area: ux;
+    padding: 7vh;
+    margin-bottom: 20px;
+    background-image: url(img/basicuxframe.png);
+}
+
+.mainmenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "web con"
+        "ani ux";
+    justify-items: center;
+}
+
+p {
+    font-size: 0.8em;
+    margin-top: -35px;
+    padding: 0;
+}
+
+
+
+/*PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO*/
+
+.containerer {
+    width: 80%;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 25vh;
+}
+
+.port {
+    background-image: url(img/frameport.png);
+    background-repeat: no-repeat;
+    margin: 10px;
+    background-size: 100%;
+    background-position: center;
+    width: 324px;
+    height: 459px;
+    text-align: center;
+}
+
+.port img {
+    width: 70%;
+    margin-top: 50px
+}
+
+.exibitions img {
+    margin-right: 10px;
+    height: 165px
+}
+
+/*BUTTON*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(60, 70, 91, 0.4);
+    color: #D5D6D8;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: Optima, Helvetica, sans-serif;
+}
+
+#myBtn:hover {
+    background-color: rgba(60, 70, 91, 1);
+}
+
+
+/*ABOUT ARTIST PAGE*/
+
+.textartist {
+/*    background-color: rgba(255,255,255, 0.23);*/
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 20%;
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, .3);
+    width: 230px;
+    height: 160px;
+    margin: 15px;
+}
+.textartist p{
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.about3 p{
+    padding-top: 50px
+}
+
+.about1 {
+    grid-area: about1;
+    background-image: url(img/me1.png);
+}
+.about2 {
+    grid-area: about2;
+}
+.about3 {
+    grid-area: about3;
+}
+.about4 {
+    grid-area: about4;
+    background-image: url(img/me3.png);
+}
+.about5 {
+    grid-area: about5;
+    background-image: url(img/me2.png);
+}
+.about6 {
+    grid-area: about6;
+}
+.aboutartist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "about1 about2"
+        "about3 about4"
+        "about5 about6";
+    justify-items: center;
+    width: 40%;
+}
+
+
+
+
+
+
+/*RESPONSIVE*/
+
+
+@media screen and (max-width: 870px) {
+
+    .mainmenu {
+        display: block;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #web {
+        margin-top: 400px
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    p {
+        margin-top: -20px;
+    }
+}
+
+
+
+
+
+/*SCROLL*/
+
+.scroller {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s all ease-in-out;
+}
+
+.scrollerappear {
+    opacity: 1;
+    transform: translateY(0px);
+}
